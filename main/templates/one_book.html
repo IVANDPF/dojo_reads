@@ -29,7 +29,7 @@
 
     <!-- ADD REVIEW FOR ACTUAL BOOK -->
     <h2>Add a review</h2>
-    <form action="/book/add_review" method="psot">
+    <form action="/book/add_review" method="post">
         {% csrf_token %}
         <label for="content">Review: </label>
         <textarea name="content" cols="20" rows="3"></textarea>
@@ -44,7 +44,7 @@
             <option value="5">5 Star</option>
         </select>
         <br>
-        <button>Create Book</button>
+        <button>Create review</button>
     </form>
 </body>
 </html>
